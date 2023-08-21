@@ -1,70 +1,97 @@
-# Getting Started with Create React App
+# MenuMatch: AI-Powered Sales Acceleration Tool 🚀
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to MenuMatch, where we unlock the potential of AI to supercharge your sales efforts and drive unprecedented success in the foodservice industry! Our innovative chat interface, fueled by cutting-edge AI technology, empowers sales professionals to target the perfect operators with precision and ease. Seamlessly integrating data-driven insights and targeted strategies, MenuMatch revolutionizes the way you approach sales execution.
 
-## Available Scripts
+![jared2](https://github.com/abdullahnaeem007/MenuMatch/assets/137498592/1a5c1718-0e63-477d-b7fe-8af1e66473a9)
 
-In the project directory, you can run:
 
-### `npm start`
+## Key Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Effortless Insights:** MenuMatch seamlessly combines data-driven insights and targeted strategies, equipping sales teams with the tools they need to excel.
+  
+- **Anywhere, Anytime Access:** With our user-friendly chat interface powered by AI, MenuMatch is accessible anytime, anywhere, making AI-enabled sales execution simple and efficient.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **State-Specific Chatbot:** Select a state from the United States, and our AI chatbot is trained using a state-specific dataset. It assists users in finding restaurants, dishes, and prices within that state, enhancing the restaurant-finding experience.
+  
+- **Chat History:** Each interaction is saved in the chat history, ensuring a record of valuable conversations for future reference.
 
-### `npm test`
+- **Authentication & Security:** Users enjoy a secure experience with authentication through login and signup. Email verification is required during the initial signup process. JWT handling from Supabase ensures session management, keeping user data safe.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **History Management:** Users have the option to clear or delete chat history, enhancing control and privacy.
 
-### `npm run build`
+![Screenshot 2023-06-19 001010](https://github.com/abdullahnaeem007/MenuMatch/assets/137498592/1678070d-14ee-446c-b46f-d73de5a826d8)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Tech Stack 🛠️
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Frontend:** Built using ReactJS, providing a dynamic and responsive user interface.
+  
+- **Styling:** Tailwind CSS is used for styling, ensuring a clean and visually appealing design.
 
-### `npm run eject`
+- **Backend:** Powered by Node.js and Express, ensuring a robust and performant server-side experience.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **Authentication & Storage:** Supabase is utilized for authentication and storage, ensuring secure user data handling.
+  
+- **AI Integration:** OpenAI API is seamlessly integrated for the chatbot, enhancing user interactions with advanced AI capabilities.
+  
+- **Dataset Access:** Rapid API provides the necessary dataset, contributing to the comprehensive and accurate information available within the application.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## How It Works 🤖
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. **State Selection:** Choose a state from the United States.
+   
+2. **Chatbot Training:** The AI chatbot is trained based on the state-specific dataset from the Rapid API, enabling personalized and accurate assistance for users.
+   
+3. **User Commands:** Users interact with the chatbot to discover restaurants, dishes, and prices within the selected state.
+   
+4. **Chat History:** Each conversation is logged in the chat history for future reference and analysis.
+   
+5. **Authentication:** Secure user authentication and email verification through Supabase ensure a safe and personalized experience.
+   
+6. **Session Management:** JWT handling allows for efficient session management, enhancing security.
+   
+7. **History Control:** Users can manage their chat history, choosing to clear or delete entries as desired.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![Screenshot 2023-06-15 025057](https://github.com/abdullahnaeem007/MenuMatch/assets/137498592/f4fcce5c-124b-466b-88aa-f5fab79b07a8)
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Get Started 🚀
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+To kickstart your journey with MenuMatch and harness the exceptional potential of AI for unparalleled sales success, follow these steps:
 
-### Code Splitting
+1. **Clone the Repository:** Begin by cloning this repository to your local development environment.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+2. **Setup Frontend:** Navigate to the `frontend` directory and set up the frontend of the application using ReactJS and Tailwind CSS. This is the user interface that will provide a dynamic and responsive experience.
 
-### Analyzing the Bundle Size
+3. **Configure Backend:** Move to the `backend` directory and configure the backend using Node.js and Express. This will handle the server-side logic and interactions.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+4. **Supabase Configuration:** Create an `.env` file in the `backend` directory. In this file, add your Supabase URL and Supabase API key as follows:
+   ```
+   SUPABASE_URL=your_supabase_url
+   SUPABASE_KEY=your_supabase_key
+   ```
 
-### Making a Progressive Web App
+5. **OpenAI Integration:** To enable the advanced capabilities of the AI chatbot, you need to integrate the OpenAI API. Obtain an API key from OpenAI and add it to your `.env` file in the `backend` directory:
+   ```
+   OPENAI_API_KEY=your_openai_api_key
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+6. **Access Dataset:** MenuMatch relies on data to provide accurate information to users. Utilize the Rapid API to access the necessary dataset. Ensure your Rapid API key is accessible.
 
-### Advanced Configuration
+7. **Supabase Authentication and Storage:** Integrate Supabase for secure user authentication and storage. This is vital to ensure user data remains protected and handled appropriately.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+8. **Customization:** Customize the application according to your specific requirements. Tailor the user interface, AI interactions, and data presentation to align with your goals.
 
-### Deployment
+9. **Launch Your App:** With all configurations in place, you're ready to launch MenuMatch! Run the frontend and backend components to bring the application to life.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+10. **Empower Your Sales Team:** Share MenuMatch with your sales team and witness the transformative impact of AI-powered insights on their sales strategies.
 
-### `npm run build` fails to minify
+## Support and Feedback 💌
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Join us in revolutionizing the foodservice industry through the fusion of AI and sales expertise! 🍔🤖
+
+![Screenshot 2023-06-19 000830](https://github.com/abdullahnaeem007/MenuMatch/assets/137498592/49a4cd3d-1c89-4216-84b5-8a343981dd61)
+
+![Screenshot 2023-06-15 131219](https://github.com/abdullahnaeem007/MenuMatch/assets/137498592/67b99dac-fdd9-4bbe-b64a-a10d9ee1d64c)
+
+![Screenshot 2023-06-15 131129](https://github.com/abdullahnaeem007/MenuMatch/assets/137498592/38f7ce55-c86d-458b-83bf-e6d8494e5a76)
